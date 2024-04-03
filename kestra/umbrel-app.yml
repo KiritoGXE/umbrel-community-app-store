@@ -30,3 +30,35 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+
+
+
+
+
+
+
+
+manifestVersion: 1
+id: kestra
+category: Development
+name: Kestra
+version: "0.15.10"
+tagline: Everything Everywhere All at Once
+description: >-
+releaseNotes: >-
+  Bug Fixes.
+developer: Kestra
+website: https://kestra.io
+dependencies: []
+repo: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
+support: https://github.com/KiritoGXE/umbrel-community-app-store/kestra/issues
+port: 18080
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Kirito
+submission: https://github.com/getumbrel/umbrel/commit/b12c581ae14255c2087fc8e2f0e7014a351a363b
