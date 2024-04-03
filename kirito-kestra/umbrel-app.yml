@@ -5,7 +5,7 @@ tagline: Everything Everywhere All at Once
 icon: https://i.imgur.com/dY6L8Gi.png
 category: Development
 version: "0.15.10"
-port: 18080
+port: 8180
 description: >-
   Kestra is a universal open-source orchestrator that makes both scheduled and event-driven workflows easy. By bringing Infrastructure as Code best practices to data, process, and microservice orchestration, you can build reliable workflows and manage them with confidence.
 
@@ -27,5 +27,5 @@ releaseNotes: >-
   Bug Fixes.
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "kestra"
+defaultPassword: "k3str4"
