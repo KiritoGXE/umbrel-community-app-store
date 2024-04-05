@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jupyterlab:
+    container_name: jupyter-datascience
+    image: quay.io/jupyter/datascience-notebook:latest
+    restart: always
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    environment:
+      - JUPYTER_TOKEN=token
+    ports:
+      - '8888:8888'
