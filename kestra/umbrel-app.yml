@@ -3,7 +3,7 @@ id: kirito-kestra
 name: Kestra
 tagline: Everything Everywhere All at Once
 icon: https://i.imgur.com/dY6L8Gi.png
-category: Development
+category: Development Tools
 version: "0.15.10"
 port: 8180
 description: >-
@@ -17,7 +17,7 @@ website: https://kestra.io
 submitter: Kirito
 submission: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
 repo: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
-support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
+support: https://github.com/KiritoGXE/umbrel-community-app-store/kestra/issues
 gallery:
   - https://i.imgur.com/67GgdEY.png
   - https://i.imgur.com/tB4OLSr.png

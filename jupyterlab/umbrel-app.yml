@@ -1,10 +1,10 @@
 manifestVersion: 1
-id: jupyterlab
+id: kirito-jupyterlab
 name: JupyterLAB
 tagline: Everything Everywhere All at Once
-icon: https://i.imgur.com/dY6L8Gi.png
-category: Development
-version: "0.15.10"
+icon: https://i.imgur.com/61m2Vz3.png
+category: Developer Tools
+version: "4.1.5"
 port: 8888
 description: >-
   Kestra is a universal open-source orchestrator that makes both scheduled and event-driven workflows easy. By bringing Infrastructure as Code best practices to data, process, and microservice orchestration, you can build reliable workflows and manage them with confidence.
@@ -12,18 +12,27 @@ description: >-
   In just a few lines of code, you can create a flow directly from the UI. Thanks to the declarative YAML interface for defining orchestration logic, business stakeholders can participate in the workflow creation process.
 
   Kestra offers a versatile set of language-agnostic developer tools while simultaneously providing an intuitive user interface tailored for business professionals. The YAML definition gets automatically adjusted any time you make changes to a workflow from the UI or via an API call. Therefore, the orchestration logic is always managed declaratively in code, even if some workflow components are modified in other ways (UI, CI/CD, Terraform, API calls).
-developer: Kestra
-website: https://kestra.io
+developer: JupyterLab
+website: https://jupyter.org/
 submitter: Kirito
-submission: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
-repo: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
-support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
+submission: https://github.com/KiritoGXE/umbrel-community-app-store/jupyterlab
+repo: https://github.com/KiritoGXE/umbrel-community-app-store/jupyterlab
+support: https://github.com/KiritoGXE/umbrel-community-app-store/jupyterlab/issues
 gallery:
   - https://i.imgur.com/67GgdEY.png
   - https://i.imgur.com/tB4OLSr.png
   - https://i.imgur.com/ilySh5A.png
 releaseNotes: >-
-  Bug Fixes.
+  Bugs fixed
+    - Fix Theme color is not applied to Toolbar Button #15957 (@FoSuCloud)
+    - Uses the browser window's selection as the default search query #15834 (@JasonWeill)
+    - Show outline on the full item in file browser, only when needed #15860 (@krassowski)
+    - Short-circuit selectItemByName() if already selected #15970 (@krassowski)
+    - Fix browser-test.js #15892 (@fcollonval)
+    - Avoid concurrency when computing the items in notebook toolbar #15954 (@brichet)
+    - Fixes filter for Chinese, other non-ASCII filenames #15935 (@JasonWeill)
+  Maintenance and upkeep improvements
+    - Ignore links to GitHub user and organisation profiles #15959 (@krassowski)
 dependencies: []
 path: ""
 defaultUsername: ""
