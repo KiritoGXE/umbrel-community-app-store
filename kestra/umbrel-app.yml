@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: kestra
+name: Kestra
+tagline: Everything Everywhere All at Once
+icon: https://i.imgur.com/dY6L8Gi.png
+category: Development
+version: "0.15.10"
+port: 8180
+description: >-
+  Kestra is a universal open-source orchestrator that makes both scheduled and event-driven workflows easy. By bringing Infrastructure as Code best practices to data, process, and microservice orchestration, you can build reliable workflows and manage them with confidence.
+
+  In just a few lines of code, you can create a flow directly from the UI. Thanks to the declarative YAML interface for defining orchestration logic, business stakeholders can participate in the workflow creation process.
+
+  Kestra offers a versatile set of language-agnostic developer tools while simultaneously providing an intuitive user interface tailored for business professionals. The YAML definition gets automatically adjusted any time you make changes to a workflow from the UI or via an API call. Therefore, the orchestration logic is always managed declaratively in code, even if some workflow components are modified in other ways (UI, CI/CD, Terraform, API calls).
+developer: Kestra
+website: https://kestra.io
+submitter: Kirito
+submission: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
+repo: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
+support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
+gallery:
+  - https://i.imgur.com/67GgdEY.png
+  - https://i.imgur.com/tB4OLSr.png
+  - https://i.imgur.com/ilySh5A.png
+  - https://i.imgur.com/OUY4OSG.png
+releaseNotes: >-
+  Bug Fixes.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
