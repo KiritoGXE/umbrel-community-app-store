@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  ariang:
+    image: hurlenko/aria2-ariang
+    ports:
+      - 23632:8080
+    volumes:
+      - /DOWNLOAD_DIR:/aria2/data
+      - /CONFIG_DIR:/aria2/conf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - RPC_SECRET=secret
+      - ARIA2RPCPORT=23632
+    restart: always
