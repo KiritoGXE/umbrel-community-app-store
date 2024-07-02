@@ -1,0 +1,16 @@
+---
+services:
+  pyload-ng:
+    image: lscr.io/linuxserver/pyload-ng:latest
+    container_name: pyload-ng
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /path/to/pyload-ng/config:/config
+      - /path/to/downloads:/downloads
+    ports:
+      - 29330:8000
+      - 26961:9666 #optional
+    restart: unless-stopped

@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: kirito-ariang
-name: AriaNg
+id: kirito-pyload-ng
+name: pyLoad
 tagline: Everything Everywhere All at Once
 icon: https://i.imgur.com/dY6L8Gi.png
-category: Development Tools
-version: "0.15.10"
-port: 8180
+category: Networking
+version: "0.5.0b3.dev85-ls140"
+port: 29330
 description: >-
   Kestra is a universal open-source orchestrator that makes both scheduled and event-driven workflows easy. By bringing Infrastructure as Code best practices to data, process, and microservice orchestration, you can build reliable workflows and manage them with confidence.
 
