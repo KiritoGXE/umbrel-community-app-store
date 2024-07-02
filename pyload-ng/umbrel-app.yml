@@ -1,21 +1,17 @@
 manifestVersion: 1
 id: kirito-pyload-ng
 name: PyLoad-NG
-tagline: Everything Everywhere All at Once
+tagline: Free and Open Source download manager
 category: Networking
 version: "0.5.0b3.dev85-ls140"
 port: 8888
 description: >-
-  Kestra is a universal open-source orchestrator that makes both scheduled and event-driven workflows easy. By bringing Infrastructure as Code best practices to data, process, and microservice orchestration, you can build reliable workflows and manage them with confidence.
-
-  In just a few lines of code, you can create a flow directly from the UI. Thanks to the declarative YAML interface for defining orchestration logic, business stakeholders can participate in the workflow creation process.
-
-  Kestra offers a versatile set of language-agnostic developer tools while simultaneously providing an intuitive user interface tailored for business professionals. The YAML definition gets automatically adjusted any time you make changes to a workflow from the UI or via an API call. Therefore, the orchestration logic is always managed declaratively in code, even if some workflow components are modified in other ways (UI, CI/CD, Terraform, API calls).
-developer: Kestra
+  PyLoad-NG is a free and open-source download manager written in Python and designed to be extremely lightweight, easily extensible, and fully manageable via a web interface.
+developer: PyLoad Team
 website: https://pyload.net/
 submitter: Kirito
-submission: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
-repo: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
+submission: https://github.com/KiritoGXE/umbrel-community-app-store/tree/main/pyload-ng
+repo: https://github.com/KiritoGXE/umbrel-community-app-store/tree/main/pyload-ng
 support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
 gallery:
   - https://i.imgur.com/67GgdEY.png
