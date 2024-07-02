@@ -9,9 +9,9 @@ services:
       - "12345:6800" # Porta per aria2 RPC
       - "23456:80" # Porta per AriaNg web interface
     volumes:
-      - ./downloads:/downloads # Directory per i download
-      - ./config:/config # Directory per la configurazione di aria2
-      - ./aria2.session:/aria2.session # File di sessione per aria2
+      - aria2_data:/downloads # Directory per i download
+      - aria2_config:/config # Directory per la configurazione di aria2
+      - aria2_session:/aria2.session # File di sessione per aria2
     environment:
       - PUID=1000 # ID utente per i file scaricati (puoi cambiare a seconda del tuo setup)
       - PGID=1000 # ID gruppo per i file scaricati (puoi cambiare a seconda del tuo setup)
