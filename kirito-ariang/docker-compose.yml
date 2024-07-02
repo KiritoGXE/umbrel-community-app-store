@@ -1,9 +1,8 @@
-version: "3"
+version: "3.7"
 
 services:
   ariang:
     image: wonderfall/aria2-ariang:latest
-    container_name: ariang
     restart: unless-stopped
     ports:
       - "12345:6800" # Porta per aria2 RPC
@@ -15,7 +14,7 @@ services:
     environment:
       - PUID=1000 # ID utente per i file scaricati (puoi cambiare a seconda del tuo setup)
       - PGID=1000 # ID gruppo per i file scaricati (puoi cambiare a seconda del tuo setup)
-      - RPC_SECRET=GX3R3publ1c!?! # Segreto per l'accesso RPC (imposta una password sicura)
+      - RPC_SECRET=RPCToken # Segreto per l'accesso RPC (imposta una password sicura)
     networks:
       - ariang_net
 
