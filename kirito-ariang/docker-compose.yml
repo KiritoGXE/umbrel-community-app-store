@@ -1,28 +1,24 @@
 version: "3"
 
 services:
-  ariang_bridge:
-    image: p3terx/ariang
-    container_name: ariang_bridge
+  ariang:
+    image: wonderfall/aria2-ariang:latest
+    container_name: ariang
     restart: unless-stopped
     ports:
-      - "6880:6880"
+      - "12345:6800" # Porta per aria2 RPC
+      - "23456:80" # Porta per AriaNg web interface
+    volumes:
+      - ./downloads:/downloads # Directory per i download
+      - ./config:/config # Directory per la configurazione di aria2
+      - ./aria2.session:/aria2.session # File di sessione per aria2
+    environment:
+      - PUID=1000 # ID utente per i file scaricati (puoi cambiare a seconda del tuo setup)
+      - PGID=1000 # ID gruppo per i file scaricati (puoi cambiare a seconda del tuo setup)
+      - RPC_SECRET=your_secret_here # Segreto per l'accesso RPC (imposta una password sicura)
     networks:
-      - bridge_network
-    logging:
-      options:
-        max-size: "1m"
-
-  ariang_host:
-    image: p3terx/ariang
-    container_name: ariang_host
-    restart: unless-stopped
-    network_mode: host
-    command: --port 6880 --ipv4
-    logging:
-      options:
-        max-size: "1m"
+      - ariang_net
 
 networks:
-  bridge_network:
+  ariang_net:
     driver: bridge
