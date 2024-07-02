@@ -7,7 +7,7 @@ category: Networking
 version: "0.5.0b3.dev85-ls140"
 port: 29330
 description: >-
-  pyLoad è un downloader manager scritto in Python e progettato per il download facile e veloce.
+  pyLoad è un download manager scritto in Python e progettato per il download facile e veloce.
 developer:
   - GammaC0de
   - vuolter

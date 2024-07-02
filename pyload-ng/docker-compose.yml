@@ -7,8 +7,8 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /path/to/pyload-ng/config:/config
-      - /path/to/downloads:/downloads
+      - /umbrel/app-data/kirito-pyload-ng/config:/config
+      - /umbrel/app-data/kirito-pyload-ng/downloads:/downloads
     ports:
       - 29330:29330
       - 26961:26961 #optional
