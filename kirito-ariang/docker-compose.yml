@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  ariang_bridge:
+    image: p3terx/ariang
+    container_name: ariang_bridge
+    restart: unless-stopped
+    ports:
+      - "6880:6880"
+    networks:
+      - bridge_network
+    logging:
+      options:
+        max-size: "1m"
+
+  ariang_host:
+    image: p3terx/ariang
+    container_name: ariang_host
+    restart: unless-stopped
+    network_mode: host
+    command: --port 6880 --ipv6
+    logging:
+      options:
+        max-size: "1m"
+
+networks:
+  bridge_network:
+    driver: bridge
