@@ -1,12 +1,12 @@
 version: "3.3"
 services:
-  pyload:
-    image: pyload
-    container_name: pyload
+  pyload-ng:
+    image: lscr.io/linuxserver/pyload-ng:latest
+    container_name: pyload-ng
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Etc/UTC
     volumes:
       - /home/umbrel/umbrel/app-data/pyload-ng/config:/config
       - /home/umbrel/umbrel/app-data/pyload-ng/downloads:/downloads
