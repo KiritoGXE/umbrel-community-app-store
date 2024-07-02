@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  pyload-ng:
+  kirito-pyload-ng:
     image: lscr.io/linuxserver/pyload-ng:latest
     container_name: pyload-ng
     environment:
