@@ -1,24 +1,14 @@
-id: kirito-pyload
-name: pyLoad
-description: pyLoad is a free and open-source download manager for various one-click-hosting sites.
-version: 0.1.0
-repository: https://github.com/pyload/pyload
-icon: https://raw.githubusercontent.com/pyload/pyload/develop/docker/pyload.png
-ports:
-  - 8800
-  - 9966
-volumes:
-  - name: config
-    path: /config
-  - name: downloads
-    path: /downloads
-env:
-  - key: PUID
-    description: User ID for file permissions
-    default: "1000"
-  - key: PGID
-    description: Group ID for file permissions
-    default: "1000"
-  - key: TZ
-    description: Timezone
-    default: Europe/London
+id: pyload-ng
+name: PyLoad-NG
+version: 1.0.0
+description: "PyLoad-NG is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible, and fully manageable via a web interface."
+repository: "https://github.com/pyload/pyload"
+slug: pyload-ng
+icon: "https://raw.githubusercontent.com/pyload/pyload/develop/docs/img/logo.png"
+type: app
+author: "Your Name"
+support:
+  homepage: "https://pyload.net"
+  email: "support@pyload.net"
+  faq: "https://github.com/pyload/pyload/wiki"
+  issues: "https://github.com/pyload/pyload/issues"

@@ -1,5 +1,4 @@
----
-version: "2"
+version: "3.3"
 services:
   pyload:
     image: pyload
@@ -9,9 +8,9 @@ services:
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - /umbrel/app-data/pyload/config:/config
-      - /umbrel/app-data/pyload/downloads:/downloads
+      - /home/umbrel/umbrel/app-data/pyload-ng/config:/config
+      - /home/umbrel/umbrel/app-data/pyload-ng/downloads:/downloads
     ports:
-      - 8800:8000 # Webinterface
-      - 9966:9666 # Click 'N' Load
+      - 8888:8000 # Webinterface
+      - 9667:9666 # Click 'N' Load
     restart: unless-stopped
