@@ -1,29 +1,24 @@
-manifestVersion: 1
-id: kirito-pyload-ng
+id: pyload
 name: pyLoad
-tagline: Everything Everywhere All at Once
-icon: https://i.imgur.com/dY6L8Gi.png
-category: Networking
-version: "0.5.0b3.dev85-ls140"
-port: 29330
-description: >-
-  pyLoad è un download manager scritto in Python e progettato per il download facile e veloce.
-developer:
-  - GammaC0de
-  - vuolter
-website: https://pypi.org/project/pyload-ng/
-submitter: Kirito
-submission: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
-repo: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
-support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
-gallery:
-  - https://i.imgur.com/67GgdEY.png
-  - https://i.imgur.com/tB4OLSr.png
-  - https://i.imgur.com/ilySh5A.png
-  - https://i.imgur.com/OUY4OSG.png
-releaseNotes: >-
-  Bug Fixes.
-dependencies: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
+description: pyLoad is a free and open-source download manager for various one-click-hosting sites.
+version: 0.1.0
+repository: https://github.com/pyload/pyload
+icon: https://raw.githubusercontent.com/pyload/pyload/develop/docker/pyload.png
+ports:
+  - 8800
+  - 9966
+volumes:
+  - name: config
+    path: /config
+  - name: downloads
+    path: /downloads
+env:
+  - key: PUID
+    description: User ID for file permissions
+    default: "1000"
+  - key: PGID
+    description: Group ID for file permissions
+    default: "1000"
+  - key: TZ
+    description: Timezone
+    default: Europe/London

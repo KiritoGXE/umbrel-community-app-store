@@ -1,15 +1,17 @@
+---
+version: "2"
 services:
-  pyload-ng:
-    image: lscr.io/linuxserver/pyload-ng:latest
-    container_name: pyload-ng
+  pyload:
+    image: pyload
+    container_name: pyload
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
+      - TZ=Europe/London
     volumes:
-      - /umbrel/app-data/kirito-pyload-ng/config:/config
-      - /umbrel/app-data/kirito-pyload-ng/downloads:/downloads
+      - /umbrel/app-data/pyload/config:/config
+      - /umbrel/app-data/pyload/downloads:/downloads
     ports:
-      - 29330:29330
-      - 26961:26961 #optional
+      - 8800:8000 # Webinterface
+      - 9966:9666 # Click 'N' Load
     restart: unless-stopped
