@@ -2,22 +2,15 @@ version: "3.7"
 
 services:
   ariang:
-    image: wonderfall/aria2-ariang:latest
-    restart: unless-stopped
+    image: hurlenko/aria2-ariang
     ports:
-      - "12345:6800" # Porta per aria2 RPC
-      - "23456:80" # Porta per AriaNg web interface
+      - 23456:8080
     volumes:
-      - ${APP_DATA_DIR}/aria2_data:/downloads # Directory per i download
-      - ${APP_DATA_DIR}/aria2_config:/config # Directory per la configurazione di aria2
-      - ${APP_DATA_DIR}/aria2_session:/aria2.session # File di sessione per aria2
+      - ${APP_DATA_DIR}/aria2/data
+      - ${APP_DATA_DIR}/aria2/conf
     environment:
-      - PUID=1000 # ID utente per i file scaricati (puoi cambiare a seconda del tuo setup)
-      - PGID=1000 # ID gruppo per i file scaricati (puoi cambiare a seconda del tuo setup)
-      - RPC_SECRET=RPCToken # Segreto per l'accesso RPC (imposta una password sicura)
-    networks:
-      - ariang_net
-
-networks:
-  ariang_net:
-    driver: bridge
+      - PUID=1000
+      - PGID=1000
+      - RPC_SECRET=secret
+      - ARIA2RPCPORT=23456
+    restart: always
