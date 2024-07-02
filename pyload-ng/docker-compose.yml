@@ -11,6 +11,6 @@ services:
       - /path/to/pyload-ng/config:/config
       - /path/to/downloads:/downloads
     ports:
-      - 29330:8000
-      - 26961:9666 #optional
+      - 29330:29330
+      - 26961:26961 #optional
     restart: unless-stopped

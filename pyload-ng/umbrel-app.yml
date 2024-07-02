@@ -12,11 +12,13 @@ description: >-
   In just a few lines of code, you can create a flow directly from the UI. Thanks to the declarative YAML interface for defining orchestration logic, business stakeholders can participate in the workflow creation process.
 
   Kestra offers a versatile set of language-agnostic developer tools while simultaneously providing an intuitive user interface tailored for business professionals. The YAML definition gets automatically adjusted any time you make changes to a workflow from the UI or via an API call. Therefore, the orchestration logic is always managed declaratively in code, even if some workflow components are modified in other ways (UI, CI/CD, Terraform, API calls).
-developer: Kestra
-website: https://kestra.io
+developer:
+  - GammaC0de
+  - vuolter
+website: https://pypi.org/project/pyload-ng/
 submitter: Kirito
-submission: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
-repo: https://github.com/KiritoGXE/umbrel-community-app-store/kestra
+submission: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
+repo: https://github.com/KiritoGXE/umbrel-community-app-store/pyload-ng
 support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
 gallery:
   - https://i.imgur.com/67GgdEY.png
