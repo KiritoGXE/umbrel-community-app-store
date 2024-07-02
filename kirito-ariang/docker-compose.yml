@@ -18,7 +18,7 @@ services:
     container_name: ariang_host
     restart: unless-stopped
     network_mode: host
-    command: --port 6880 --ipv6
+    command: --port 6880 --ipv4
     logging:
       options:
         max-size: "1m"
