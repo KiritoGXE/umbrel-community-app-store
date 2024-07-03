@@ -23,4 +23,4 @@ services:
     ports:
       - "18081:80" # Porta Web UI
     environment:
-      - ARIA2RPC=ws://aria2:6800/jsonrpc
+      - ARIA2RPC=ws://aria2:16800/jsonrpc
