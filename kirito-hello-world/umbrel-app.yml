@@ -1,16 +1,20 @@
 manifestVersion: 1
-id: kirito-ariang
-name: AriaNG
+id: sparkles-hello-world
+name: Hello World
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 16800
+port: 4000
 description: >-
-  AriaNg is a modern web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.
+  Add your app's description here.
+
+
+  You can also add newlines!
+
 developer: Umbrel
 website: https://umbrel.com
-submitter: Kirito
+submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
