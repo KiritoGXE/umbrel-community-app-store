@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: kirito-jDownload
+name: jDownload
+tagline: Unofdicial jDownload integration for umbrel
+icon: https://svgur.com/i/mvA.svg
+category: Media
+version: "1.0.0"
+port: 5800
+description: >-
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+   culpa qui officia deserunt mollit anim id est laborum."
+
+developer: jdownloader Team
+website: https://jdownloader.org/download/index
+submitter: GXE Team
+submission: https://github.com/KiritoGXE/umbrel-community-app-store
+repo: https://github.com/KiritoGXE/umbrel-community-app-store
+support: https://github.com/KiritoGXE/umbrel-community-app-store
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  First ever release
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
