@@ -1,15 +1,9 @@
-version: "3.8"
+version: "3"
 services:
-  jdownloader:
-    image: jaymoulin/jdownloader
-    container_name: jdownloader
-    restart: always
+  jdownloader-2:
+    image: jlesage/jdownloader-2
     ports:
-      - "14546:5800" # Porta per l'interfaccia grafica via VNC
+      - "4782:5800"
     volumes:
-      - ${APP_DATA_DIR}/config:/opt/JDownloader/cfg
-      - ${APP_DATA_DIR}/downloads:/root/Downloads
-    environment:
-      - MYJD_USER=tuo_email@example.com
-      - MYJD_PASSWORD=la_tua_password
-      - MYJD_DEVICE_NAME=nome_del_tuo_dispositivo
+      - "/docker/appdata/jdownloader-2:/config:rw"
+      - "/home/user/downloads:/output:rw"
