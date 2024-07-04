@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: kirito-hello-world
-name: Hello World
+id: kirito-kestra
+name: Kestra
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 4000
+port: 16825
 description: >-
   Add your app's description here.
 
@@ -14,7 +14,7 @@ description: >-
 
 developer: Umbrel
 website: https://umbrel.com
-submitter: Umbrel
+submitter:
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
