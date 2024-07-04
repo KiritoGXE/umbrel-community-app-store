@@ -1,30 +1,15 @@
+version: "3.8"
 services:
   jdownloader:
     image: jaymoulin/jdownloader
     container_name: jdownloader
     restart: always
-    user: 1001:100
-    volumes:
-      - ${APP_DATA_DIR}:/opt/JDownloader/app/cfg
-      - ${APP_DATA_DIR}:/opt/JDownloader/Downloads
-      - ${APP_DATA_DIR}:/opt/JDownloader/app/logs #optional
-      - ${APP_DATA_DIR}:/opt/JDownloader/app/extensions #optional
-      - /etc/localtime:/etc/localtime:ro #optional
-    environment:
-      FILE_MYJD_USER: myjd-user #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-      FILE_MYJD_PASSWORD: myjd-password #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-      MYJD_USER: email@email.com #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-      MYJD_PASSWORD: bar #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-      MYJD_DEVICE_NAME: goofy #optional
-      XDG_DOWNLOAD_DIR: /opt/JDownloader/Downloads #optional
     ports:
-      - 3129:3129
-    secrets:
-      - myjd-user #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-      - myjd-password #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-
-secrets:
-  myjd-user: #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-    file: ~/jdownloader/secrets/myjd_user.txt
-  myjd-password: #optional (see [Identify](https://github.com/jaymoulin/docker-jdownloader#identify))
-    file: ~/jdownloader/secrets/myjd_password.txt
+      - "14546:5800" # Porta per l'interfaccia grafica via VNC
+    volumes:
+      - ${APP_DATA_DIR}/config:/opt/JDownloader/cfg
+      - ${APP_DATA_DIR}/downloads:/root/Downloads
+    environment:
+      - MYJD_USER=tuo_email@example.com
+      - MYJD_PASSWORD=la_tua_password
+      - MYJD_DEVICE_NAME=nome_del_tuo_dispositivo
