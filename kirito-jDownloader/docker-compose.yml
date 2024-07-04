@@ -1,15 +1,9 @@
-version: '3.3'
-
+version: "3"
 services:
-  jdownloader:
+  jdownloader-2:
     image: jlesage/jdownloader-2
-    container_name: jdownloader
     ports:
       - "5800:5800"
     volumes:
-      - ${APP_DATA_DIR}/config:/config
-      - ${APP_DATA_DIR}/downloads:/output
-    environment:
-      - MYJD_USER=admin
-      - MYJD_PASSWORD=admin
-    restart: unless-stopped
+      - "${APP_DATA_DIR}:/config:rw"
+      - "${APP_DATA_DIR}:/output:rw"
