@@ -5,5 +5,5 @@ services:
     ports:
       - "4782:5800"
     volumes:
-      - "/docker/appdata/jdownloader-2:/config:rw"
-      - "/home/user/downloads:/output:rw"
+      - "${APP_DATA_DIR}:/config:rw"
+      - "${APP_DATA_DIR}:/output:rw"
