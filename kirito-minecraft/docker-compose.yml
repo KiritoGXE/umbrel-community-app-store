@@ -5,6 +5,7 @@ services:
     stdin_open: true
     ports:
       - "25565:25565"
+      - "7867:7867"
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
