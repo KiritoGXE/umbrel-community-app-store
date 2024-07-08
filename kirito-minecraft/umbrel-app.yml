@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: kirito-crafty-controller
-name: Crafty Controller
+id: kirito-minecraft
+name: Minecraft
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 19267
+port: 25565
 description: >-
   Add your app's description here.
 
