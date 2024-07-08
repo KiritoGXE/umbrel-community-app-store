@@ -3,7 +3,7 @@ services:
   jdownloader-2:
     image: jlesage/jdownloader-2
     ports:
-      - "17699:5800"
+      - "17599:5800"
     volumes:
       - "/home/umbrel/umbrel/kirito-jdownloader/config:/config:rw"
       - "/home/umbrel/umbrel/kirito-jdownloader/output:/output:rw"
