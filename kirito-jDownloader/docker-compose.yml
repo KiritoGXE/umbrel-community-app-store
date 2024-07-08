@@ -1,9 +1,16 @@
-version: "3"
+version: "3.7"
+
 services:
-  jdownloader-2:
-    image: jlesage/jdownloader-2
-    ports:
-      - "17599:5800"
+  jdownloader:
+    image: jaymoulin/jdownloader
+    container_name: jdownloader
+    environment:
+      - MYJD_USER=tuo_user_email
+      - MYJD_PASSWORD=la_tua_password
+      - MYJD_DEVICE_NAME=NomeDelDispositivo
     volumes:
-      - "/home/umbrel/umbrel/kirito-jdownloader/config:/config:rw"
-      - "/home/umbrel/umbrel/kirito-jdownloader/output:/output:rw"
+      - ./config:/opt/JDownloader/cfg
+      - ./downloads:/root/Downloads
+    ports:
+      - 19829:3129
+    restart: always
