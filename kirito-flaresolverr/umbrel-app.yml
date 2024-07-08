@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: kirito-pyload
-name: Hello World
+id: kirito-flaresolverr
+name: FlareSolverr
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 17689
+port: 8191
 description: >-
   Add your app's description here.
 
@@ -14,7 +14,7 @@ description: >-
 
 developer: Umbrel
 website: https://umbrel.com
-submitter: Umbrel
+submitter: Kirito
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
