@@ -9,17 +9,39 @@ port: 7865
 description: >-
   MCDash is a simple dashboard for your Minecraft server. It allows you to see the current status of your server, the online players, console and more.
 
+
   ✅ See the current status of your server
+
+
   ✅ See the online players
+
+
   ✅ View and edit the files of your server
+
+
   ✅ Use your server console
+
+
   ✅ Execute commands
+
+
   ✅ See the installed plugins & install plugisn from spigotmc
+
+
   ✅ Schedule tasks daily, monthly, ...
+
+
   ✅ See the installed plugins
+
+
   ✅ Create backups of your server
+
+
   ✅ Manage your worlds
+
+
   ✅ Update your server properties
+
 developer: Mathias Wagner
 website: https://mcdash.gnmyt.dev/
 submitter: Kirito
@@ -33,13 +55,28 @@ gallery:
   - https://i.imgur.com/f2XZBpP.png
 releaseNotes: >-
   🐛 Updated the weather translation by @gnmyt in #44
+
+
   🐛 Fixed the invalid token bug by @gnmyt in #55
+
+
   🐛 Fixed text selection inside file editor by @gnmyt in #62
+
+
   📅 Action Scheduler by @gnmyt in #57
+
+
   🌍 Added Spanish translations by @gnmyt in #58
+
+
   🖼️ Rebranding (new logo) by @gnmyt in #59
+
+
   📜 Added a console log by @gnmyt in #60
+
+
   👤 Added skin avatars by @gnmyt in #61
+
 dependencies: []
 path: ""
 defaultUsername: "GXE"
