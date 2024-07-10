@@ -6,6 +6,7 @@ services:
     ports:
       - "25565:25565"
       - "7867:7867"
+      - "8100:8100"
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
