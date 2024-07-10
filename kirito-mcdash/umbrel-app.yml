@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: kirito-homarr
-name: Homarr
+id: kirito-mcdash
+name: MCDash
 tagline: Replace this tagline with your app's tagline
-icon: "https://i.imgur.com/pmZ0bSS.png"
+icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 7575
+port: 7865
 description: >-
   Add your app's description here.
 
