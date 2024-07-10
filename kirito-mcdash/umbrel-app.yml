@@ -1,30 +1,46 @@
 manifestVersion: 1
 id: kirito-mcdash
 name: MCDash
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
+tagline: MCDash is a simple dashboard for your Minecraft server
+icon: https://i.imgur.com/tlxgDIk.jpeg
+category: Networking
+version: "1.1.7"
 port: 7865
 description: >-
-  Add your app's description here.
+  MCDash is a simple dashboard for your Minecraft server. It allows you to see the current status of your server, the online players, console and more.
 
-
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
+  ✅ See the current status of your server
+  ✅ See the online players
+  ✅ View and edit the files of your server
+  ✅ Use your server console
+  ✅ Execute commands
+  ✅ See the installed plugins & install plugisn from spigotmc
+  ✅ Schedule tasks daily, monthly, ...
+  ✅ See the installed plugins
+  ✅ Create backups of your server
+  ✅ Manage your worlds
+  ✅ Update your server properties
+developer: Mathias Wagner
+website: https://mcdash.gnmyt.dev/
 submitter: Kirito
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submission: https://github.com/KiritoGXE/umbrel-community-app-store
+repo: https://github.com/KiritoGXE/umbrel-community-app-store
+support: https://github.com/KiritoGXE/umbrel-community-app-store/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/Bgt4orn.png
+  - https://i.imgur.com/9cywUpX.png
+  - https://i.imgur.com/WB02sYM.png
+  - https://i.imgur.com/f2XZBpP.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  🐛 Updated the weather translation by @gnmyt in #44
+  🐛 Fixed the invalid token bug by @gnmyt in #55
+  🐛 Fixed text selection inside file editor by @gnmyt in #62
+  📅 Action Scheduler by @gnmyt in #57
+  🌍 Added Spanish translations by @gnmyt in #58
+  🖼️ Rebranding (new logo) by @gnmyt in #59
+  📜 Added a console log by @gnmyt in #60
+  👤 Added skin avatars by @gnmyt in #61
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "GXE"
+defaultPassword: "GX3R3publ1c!?!"
