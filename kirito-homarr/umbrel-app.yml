@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kirito-homarr
 name: Homarr
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+icon: "./img/icon.png"
 category: Development
 version: "1.0.0"
 port: 7575
