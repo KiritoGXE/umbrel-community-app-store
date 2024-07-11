@@ -4,7 +4,7 @@ name: Minecraft
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Gaming
-version: "1.0.3"
+version: "1.0.4"
 port: 7867
 description: >-
   Add your app's description here.

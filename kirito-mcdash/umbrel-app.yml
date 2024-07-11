@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: kirito-mcdash
-name: MCDash
+name: MCDash Wrapper
 tagline: MCDash is a simple dashboard for your Minecraft server
 icon: https://i.imgur.com/tlxgDIk.jpeg
 category: Networking
-version: "1.1.7"
+version: "1.0.0-ALPHA"
 port: 7865
 description: >-
   MCDash is a simple dashboard for your Minecraft server. It allows you to see the current status of your server, the online players, console and more.
