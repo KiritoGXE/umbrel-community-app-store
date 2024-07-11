@@ -1,9 +1,9 @@
 manifestVersion: 1
-id: kirito-minecraft
-name: Minecraft
+id: kirito-gxecraft-network
+name: GXECraft Network
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Gaming
+icon: https://i.imgur.com/0uiZ0t8.jpeg
+category: Networking
 version: "1.0.4"
 port: 7867
 description: >-
