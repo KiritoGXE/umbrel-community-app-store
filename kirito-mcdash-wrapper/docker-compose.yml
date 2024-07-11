@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  mcdash:
+    image: germannewsmaker/mcdash
+    container_name: MCDash
+    restart: unless-stopped
+    volumes:
+      - mcdash:/app/data
+    network_mode: host
+volumes:
+  mcdash:
