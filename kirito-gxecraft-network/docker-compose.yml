@@ -1,5 +1,6 @@
 services:
   mc:
+    tty: true
     image: itzg/minecraft-server:java17
     environment:
       DEBUG: true
