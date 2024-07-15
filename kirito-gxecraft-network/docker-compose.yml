@@ -1,20 +1,22 @@
-version: "3.8"
-
 services:
-  minecraft:
-    image: itzg/minecraft-server
-    tty: true
-    stdin_open: true
+  mc:
+    image: itzg/minecraft-server:java17
+    environment:
+      DEBUG: true
+      SETUP_ONLY: true
+      EULA: true
+      TYPE: MODRINTH
+      VERSION: 1.20.1
+      MEMORY: 4G
+      MODRINTH_MODPACK: better-mc-forge-bmc4
+      MODRINTH_VERSION: v28
+      MODRINTH_OVERRIDES_EXCLUSIONS: |
+        mods/NekosEnchantedBooks-*.jar
+        mods/citresewn-*.jar
+    volumes:
+      - data:/data
     ports:
       - "25565:25565"
-    environment:
-      TYPE: "AUTO_CURSEFORGE"
-      CF_API_KEY: "$$2a$$10$$vVcgq1.Iv74zeiT1y4JkBOLq7e0Luc.E4981pP2Sx5XRqwWxEPkVu"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/files/5418297"
-      EULA: "TRUE"
-      INIT_MEMORY: "1G"
-      MAX_MEMORY: "6G"
-    volumes:
-      # attach the relative directory 'data' to the container's /data path
-      - ./data:/data
-    restart: on-failure:3
+
+volumes:
+  data: {}
