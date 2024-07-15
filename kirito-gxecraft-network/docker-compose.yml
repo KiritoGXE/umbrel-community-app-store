@@ -12,6 +12,8 @@ services:
       CF_API_KEY: "$$2a$$10$$vVcgq1.Iv74zeiT1y4JkBOLq7e0Luc.E4981pP2Sx5XRqwWxEPkVu"
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/files/5418297"
       EULA: "TRUE"
+      INIT_MEMORY: "1G"
+      MAX_MEMORY: "6G"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data

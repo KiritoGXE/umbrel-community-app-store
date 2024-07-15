@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kirito-gxecraft-network
 name: Better Minecraft
 tagline: Replace this tagline with your app's tagline
-icon: https://i.imgur.com/0uiZ0t8.jpeg
+icon: https://media.forgecdn.net/avatars/thumbnails/835/282/256/256/638226792192343447.png
 category: Networking
 version: "1.0.5"
 port: 25565
@@ -13,7 +13,7 @@ description: >-
   You can also add newlines!
 
 developer: Kirito
-website: https://umbrel.com
+website: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4
 submitter: Kirito
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
