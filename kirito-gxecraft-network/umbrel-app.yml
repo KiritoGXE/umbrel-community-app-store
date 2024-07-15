@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: kirito-gxecraft-network
-name: GXECraft Network
+name: Better Minecraft
 tagline: Replace this tagline with your app's tagline
 icon: https://i.imgur.com/0uiZ0t8.jpeg
 category: Networking
-version: "1.0.4"
-port: 7867
+version: "1.0.5"
+port: 25565
 description: >-
   Add your app's description here.
 
