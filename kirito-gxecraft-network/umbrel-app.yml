@@ -4,7 +4,7 @@ name: GXECraft Network
 tagline: Replace this tagline with your app's tagline
 icon: https://media.forgecdn.net/avatars/thumbnails/835/282/256/256/638226792192343447.png
 category: Networking
-version: "1.0.7"
+version: "1.0.8"
 port: 25565
 description: >-
   Add your app's description here.

@@ -4,7 +4,6 @@ services:
     image: itzg/minecraft-server:java17
     environment:
       DEBUG: true
-      SETUP_ONLY: true
       EULA: true
       TYPE: MODRINTH
       VERSION: 1.20.1
