@@ -7,5 +7,3 @@ services:
     volumes:
       - mcdash:/app/data
     network_mode: host
-volumes:
-  mcdash:
