@@ -15,7 +15,7 @@ services:
       - PAGE_TITLE=Motrix
       - ROOT_PASSWORD=password
     ports:
-      - "25645:8080" # noVNC web UI
+      - "21867:8080" # noVNC web UI
       - "20234:5900" # VNC
     volumes:
       - ./appconfig:/config
