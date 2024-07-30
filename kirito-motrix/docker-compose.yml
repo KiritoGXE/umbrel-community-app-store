@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  motriox-kde:
+    image: msjpq/motrix-vnc
+    container_name: kde-vnc-container
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - SCR_WIDTH=1920
+      - SCR_HEIGHT=1080
+      - PATH_PREFIX=/
+      - VNC_RESIZE=remote
+      - RECON_DELAY=250
+      - PAGE_TITLE=Motrix
+      - ROOT_PASSWORD=password
+    ports:
+      - "25645:8080" # noVNC web UI
+      - "20234:5900" # VNC
+    volumes:
+      - ./appconfig:/config
+    restart: unless-stopped
