@@ -1,8 +1,8 @@
-version: "3"
+version: "3.8"
 
 services:
   motrix:
-    image: msjpq/motrix-vnc
+    image: msjpq/motrix-vnc:latest
     container_name: kde-vnc-container
     environment:
       PGID: "1000"
