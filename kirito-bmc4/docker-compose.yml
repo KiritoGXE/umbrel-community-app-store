@@ -1,0 +1,20 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java17
+    environment:
+      EULA: true
+      TYPE: MODRINTH
+      MEMORY: 4G
+      MODRINTH_MODPACK: better-mc-forge-bmc4
+      MODRINTH_VERSION: v28
+      MODRINTH_OVERRIDES_EXCLUSIONS: |
+        mods/NekosEnchantedBooks-*.jar
+        mods/citresewn-*.jar
+    volumes:
+      - data:/data
+    ports:
+      - "25565:25565"
+      - "7867:7867"
+
+volumes:
+  data: {}

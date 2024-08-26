@@ -4,14 +4,14 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "8100:8100"
       - "25565:25565"
-      - "7867:7867"
     environment:
       EULA: "TRUE"
-      TYPE: "PAPER"
-      VERSION: "1.21.1"
-      PAPER_BUILD: "41"
+      MOD_PLATFORM: "MODRINTH"
+      MODRINTH_MODPACK: "better-mc-forge-bmc4"
+      VERSION: "LATEST"
+      MODRINTH_LOADER: "fabric"
+      MEMORY: "8G"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
